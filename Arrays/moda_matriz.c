@@ -3,7 +3,7 @@
  * 13/11/2020
  * 
  * Matriz 10x10 preenchida com valores pseudo aleatórios no
- * intervalo [0+y, 5+y] tal que cada linha nova: y = y+1 
+ * intervalo [0+y, 5+y] tal que cada linha nova: y = y+1. 
  * 
  * Adicionado moda da matriz
  * 
