@@ -1,0 +1,31 @@
+#include <stdio.h>
+#define TAM 10
+
+int main()
+{
+    int X[TAM];
+    float A[TAM]={}, B[TAM]={}, Media;
+    int SOMA=0;
+    int aa=0, bb=0;
+
+    printf("Digite 10 elementos de X\n");
+    for(int i=0; i<TAM; i++)
+        scanf("%d", &X[i]);
+
+    for(int i=0; i<TAM; i++)
+        SOMA+=X[i];
+
+    Media = (float)SOMA/TAM;
+
+    for(int i=0; i<TAM; i++){
+        if(X[i] > Media) A[aa++]=X[i];
+        if(X[i] < Media) B[bb++]=X[i];
+    }
+
+    printf("Media: %f\n", Media);
+    for(int i=0; i<TAM; i++)
+        printf("A[%d]: %.2f\tB[%d]: %.2f\n"
+               , i, A[i], i, B[i]);
+
+    return 0;
+}
